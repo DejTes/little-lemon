@@ -1,7 +1,14 @@
 import "./App.css";
 
 function App() {
-  return <>Capstone</>;
+  return 
+  <>
+  <Header>
+
+  <h1> Capstone</h1>
+  
+  </Header>
+  </>;
 }
 
 export default App;
