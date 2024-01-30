@@ -1,84 +1,79 @@
- /* Navbar css */
+/* Navbar css */
 nav {
-    background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: rgb(94, 94, 12);
+  background: transparent;
+  border-color: transparent;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: rgb(5, 104, 56);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+  width: 200px;
+}
+.links a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.links a:hover {
+  background: rgb(105, 128, 59);
+  color: rgb(16, 14, 14);
+  padding-left: 1.5rem;
+}
+/* 160px */
+
+.links-container {
+  overflow: hidden;
+  transition: 0.5s ease-in-out all;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
   }
-  
   .nav-header {
+    padding: 0;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
   }
-  .nav-toggle {
-    font-size: 1.5rem;
-    color: rgb(94, 94, 12);
-    background: transparent;
-    border-color: transparent;
-    transition: 0.3s ease-in-out all;
-    cursor: pointer;
+  .links-container {
+    height: auto !important;
   }
-  .nav-toggle:hover {
-    color: rgb(5, 104, 56);
-    transform: rotate(90deg);
-  }
-  .logo {
-    height: 40px;
-    width: 200px
+  .links {
+    display: flex;
+    gap: 1.5rem;
   }
   .links a {
-    color: grey;
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    display: block;
-    padding: 0.5rem 1rem;
-    transition: .3s ease-in-out all;
+    padding: 0;
   }
-  
   .links a:hover {
-    background: rgb(105, 128, 59);
-    color: rgb(16, 14, 14);
-    padding-left: 1.5rem;
+    padding: 0;
+    background: transparent;
   }
-  /* 160px */
-  
-  .links-container {
-    overflow: hidden;
-    transition: .5s ease-in-out all;
-  }
-  
- 
-  
-  @media screen and (min-width: 800px) {
-    .nav-toggle {
-      display: none;
-    }
-    .nav-header {
-      padding: 0;
-    }
-    .nav-center {
-      max-width: 1170px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-    }
-    .links-container {
-      height: auto !important;
-    }
-    .links {
-      display: flex;
-      gap: 1.5rem;
-    }
-    .links a {
-      padding: 0;
-    }
-    .links a:hover {
-      padding: 0;
-      background: transparent;
-    }
-  
-  }
-  
+}
