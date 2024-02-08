@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/HeroSection.css";
 import gourmet from "../images/gourmet.jpg"
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -10,8 +11,7 @@ const HeroSection = () => {
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                <button className="btn">Reserve a Table</button>
-
+                <Link to="/reservation" className="btn">Reserve a Table</Link>
             </div>
             <div className="section-right">
                 <div className="image-box">
